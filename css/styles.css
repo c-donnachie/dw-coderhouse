@@ -1,0 +1,230 @@
+/* Estilos generales */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(#2c2f42, #161824);
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+/* Estilos de encabezado, navegación */
+
+header {
+  background-color: black;
+  padding: 30px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 40;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos de secciones */
+
+.banner-container {
+  width: 100rem;
+  height: 350px;
+  display: flex;
+}
+
+.banner {
+  width: 100rem;
+  height: 100fr;
+}
+
+.featured-movies {
+  padding: 20px;
+}
+
+.section-1 {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: inline-block;
+  margin-right: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  width: 100%; /* Set the card width to 100% for responsiveness */
+  max-width: 300px; /* Set a maximum width for the card to avoid excessive stretching */
+}
+
+.card img {
+  width: 100%; /* Set the image width to 100% to make it responsive */
+  height: 180px; /* Keep the fixed height or adjust as needed */
+  object-fit: cover; /* Use "cover" to maintain aspect ratio while covering the container */
+  border-radius: 0.375rem;
+  transition: transform 0.6s ease;
+}
+
+.card::before {
+  inset: 0px;
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+
+.card:hover,
+.card img:hover {
+  transform: scale(1.05, 1.05) translateZ(0px) translate3d(0px, 0px, 0px);
+  transition-duration: 400ms;
+  box-shadow: rgb(0 0 0 / 90%) 0px 30px 20px -10px;
+}
+
+.titles {
+  margin-left: 40px;
+  color: white;
+  font-size: x-large;
+  font-weight: normal;
+  margin-bottom: -6px;
+}
+
+ /* Carrusel */
+
+ .contenido {
+  width: 400px;
+ }
+
+ .carrusel {
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+ }
+
+ .carrusel::-webkit-scrollbar {
+  display: none;
+ }
+
+ .cardc {
+  scroll-snap-align: start;
+  border-radius: 30px;
+  
+ }
+
+/* Contact  */
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  padding-bottom: 25rem;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.contact-form button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+/* Pie de pagina */
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+      150px,
+      1fr
+    )
+  );
+  gap: 0px;
+}
+
+.container-img > img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 0px #000;
+}
+
+.container-img {
+  display: grid;
+  grid-template-columns: 
+  repeat(
+    auto-fit,
+    minmax(
+      150px,
+      1fr
+    )
+  );
+  gap: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* Media queries para hacerlo responsive */
+
+@media (min-width: 768px) {
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: radial-gradient(#4755aa, #2e7150); */
+}
+
+}
