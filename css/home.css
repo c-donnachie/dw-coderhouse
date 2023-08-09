@@ -1,7 +1,4 @@
 .banner-container {
-  width: 100rem;
-  height: 50rem;
-  position: relative;
   overflow: hidden;
 }
 
@@ -16,7 +13,7 @@
   z-index: 1;
 }
 
-.container {
+.container-1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,9 +45,8 @@ card-2 {
 }
 
 .card img {
-  width: auto;
-  height: 402px;
-  object-fit: fill;
+  max-width: 100%;
+  height: auto;
 }
 
 .card::before {
@@ -93,8 +89,6 @@ card-2 {
 }
 
 .container-img {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 32px;
   margin-left: 32px;
   margin-right: 32px;
@@ -118,14 +112,6 @@ card-2 {
   width: 780px;
   height: auto;
 }
-
-.section-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-}
-
 .s1 {
   grid-area: izquierda;
 }
@@ -149,4 +135,35 @@ card-2 {
 .button-2:hover {
   border-color: rgb(145, 129, 248);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.banner-2 {
+  width: auto;
+  height: auto;
+  margin-left: 100px;
+}
+
+.section-flex-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+/* MODO GRID BOOTSTRAP >.<  */
+
+sub-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.section-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
