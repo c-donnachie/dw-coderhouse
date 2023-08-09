@@ -31,3 +31,10 @@ footer {
   align-items: end;
   height: 150px;
 }
+
+a {
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

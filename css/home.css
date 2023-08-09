@@ -16,9 +16,17 @@
   z-index: 1;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .logos {
-  height: 60px;
+  height: 110px;
   width: auto;
+  margin: 10px;
 }
 
 .description {
@@ -133,9 +141,9 @@ card-2 {
   background-image: linear-gradient(to right, rgb(145, 129, 248), #bd13e8);
   padding: 15px;
   width: 230px;
-  border-radius: 8px;
-  border: 2px solid transparent;
+  border-radius: 6px;
   transition: background-image 0.3s ease;
+  border: 1px solid transparent;
 }
 
 .button-2:hover {

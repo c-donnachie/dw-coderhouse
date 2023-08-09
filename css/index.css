@@ -6,24 +6,21 @@ h3 {
   color: white;
 }
 
-button {
-    height: 60px;
-    width: 200px;
-    background-color: rgb(124, 10, 124);
-    border: none;
-    border-radius: 300px;
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    color: inherit;
-    line-height: normal;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 10cqb;
+.button-1 {
+  text-align: center;
+  color: white;
+  font-size: larger;
+  background-image: linear-gradient(to right, rgb(145, 129, 248), #bd13e8);
+  padding: 15px;
+  width: 230px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: background-image 0.3s ease;
 }
 
-button:hover {
-    background-color: white;
+.button-1:hover {
+  border-color: rgb(145, 129, 248);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 section {
