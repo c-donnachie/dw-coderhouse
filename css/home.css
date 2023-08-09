@@ -1,12 +1,29 @@
 .banner-container {
   width: 100rem;
-  height: 40rem;
-  display: flex;
+  height: 50rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #090819);
+  z-index: 1;
 }
 
 .logos {
   height: 60px;
   width: auto;
+}
+
+.description {
+  position: relative;
+  z-index: 10;
 }
 
 /* elementos */
@@ -113,7 +130,7 @@ card-2 {
   text-align: center;
   color: white;
   font-size: larger;
-  background-image: linear-gradient(to right, blueviolet, #bd13e8);
+  background-image: linear-gradient(to right, rgb(145, 129, 248), #bd13e8);
   padding: 15px;
   width: 230px;
   border-radius: 8px;
@@ -122,6 +139,6 @@ card-2 {
 }
 
 .button-2:hover {
-  border-color: blueviolet;
+  border-color: rgb(145, 129, 248);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }

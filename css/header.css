@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 20px;
+  padding: 20px 20px;
   margin-top: -100px;
   background-color: rgba(0, 0, 0, 0.375);
 }
@@ -20,7 +20,10 @@
 }
 .header-buttons {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .header-buttons a {
@@ -36,3 +39,16 @@
   color: white;
 }
 
+.header-button-1 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(150, 150, 150, 0.111);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.header-button-1:hover {
+background-color: black;
+color: back;
+}
