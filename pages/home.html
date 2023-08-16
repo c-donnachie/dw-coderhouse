@@ -3,31 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Películas de Disney</title>
+    <meta name="description" content="Categorias de peliculas y series">
+    <meta name="keywords" content="series, peliculas, anime, terror, accion">
+    <title>Películas de HBO</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css//home.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+
+    <!-- CSS section (no toma imagenes de fondo en sass) -->
+    <style>
+      body {
+        background-image: url("../img/bg/1.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        min-height: 110vh;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      }
+    </style>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    ></script>
-    <script type="text/javascript" src="../js/carrusel.js"></script>
-
-    <script src="../bootstrap/js/jquery.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
   </head>
 
   <header class="header">
@@ -46,6 +49,7 @@
   </header>
 
   <body>
+    <!-- Banner -->
     <section class="container-fluid">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -114,72 +118,93 @@
       </div>
     </section>
 
-    <main>
-      <!-- ==== -->
-      <section>
-        <h3 class="titles">Recomendado para ti</h3>
-        <div class="container-img">
-          <div class="card"><img src="../img/portadas/series/0.jpeg" alt="Imagen 0" /></div>
-          <div class="card"><img src="../img/portadas/series/1.jpeg" alt="Imagen 1" /></div>
-          <div class="card"><img src="../img/portadas/series/2.jpeg" alt="Imagen 2" /></div>
-          <div class="card"><img src="../img/portadas/series/3.jpeg" alt="Imagen 3" /></div>
-          <div class="card"><img src="../img/portadas/series/4.jpeg" alt="Imagen 4" /></div>
-          <div class="card"><img src="../img/portadas/series/5.jpeg" alt="Imagen 5" /></div>
-          <div class="card"><img src="../img/portadas/series/6.jpeg" alt="Imagen 6" /></div>
-          <div class="card"><img src="../img/portadas/series/7.jpeg" alt="Imagen 7" /></div>
-          <div class="card"><img src="../img/portadas/series/8.jpeg" alt="Imagen 8" /></div>
-        </div>
-      </section>
-
-      <!--Cards BTS-->
-      <div class="container mt-3">
-        <div class="row g-3">
-          <!--tarjeta 1-->
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <img class="card-img-top" src="../img/banners-2/1.jpeg" alt="fito-tercer-mundo" />
+    <!-- Content -->
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../img/portadas/cine/0.jpeg" alt="0" class="card-img" />
+            </div>
           </div>
-          <!--tarjeta 2-->
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="card-body section-flex">
-              <h3>Dale play a la diversion</h3>
-              <p>
-                se parte de los universos de Warners Bros, DC Comics, HBO, Cartoon Network y mas.
-              </p>
-              <div class="button-2">Suscribete Ahora!</div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../img/portadas/cine/1.jpeg" alt="2" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../img/portadas/cine/2.jpeg" alt="2" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../img/portadas/cine/3.jpeg" alt="3" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../img/portadas/cine/4.jpeg" alt="4" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../img/portadas/cine/5.jpeg" alt="5" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../img/portadas/cine/6.jpeg" alt="6" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../img/portadas/cine/7.jpeg" alt="7" class="card-img" />
             </div>
           </div>
           <!-- === -->
         </div>
       </div>
 
-      <!-- <section class="section-grid">
-        <div class="s1">
-          <img class="banner-2" src="../img/banners-2/1.jpeg" alt="1" />
-        </div>
-        <div class="s2 section-flex">
-          <h3>Dale play a la diversion</h3>
-          <p>se parte de los universos de Warners Bros, DC Comics, HBO, Cartoon Network y mas.</p>
-          <div class="button-2">Suscribete Ahora!</div>
-        </div>
-      </section> -->
-
-      <section>
-        <h3 class="titles">Del cine a tu casa</h3>
-        <div class="container-img">
-          <div class="card"><img src="../img/portadas/cine/0.jpeg" alt="Imagen 0" /></div>
-          <div class="card"><img src="../img/portadas/cine/1.jpeg" alt="Imagen 1" /></div>
-          <div class="card"><img src="../img/portadas/cine/2.jpeg" alt="Imagen 2" /></div>
-          <div class="card"><img src="../img/portadas/cine/3.jpeg" alt="Imagen 3" /></div>
-          <div class="card"><img src="../img/portadas/cine/4.jpeg" alt="Imagen 4" /></div>
-          <div class="card"><img src="../img/portadas/cine/5.jpeg" alt="Imagen 5" /></div>
-          <div class="card"><img src="../img/portadas/cine/6.jpeg" alt="Imagen 6" /></div>
-          <div class="card"><img src="../img/portadas/cine/7.jpeg" alt="Imagen 7" /></div>
-          <div class="card"><img src="../img/portadas/cine/8.jpeg" alt="Imagen 8" /></div>
-        </div>
-      </section>
-    </main>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>Derechos de autor © 2023 HBO MAX</p>
+    </footer>
   </body>
-  <footer>
-    <p>Derechos de autor © 2023 HBO MAX</p>
-  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="../bootstrap/js/jquery.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="../js/swiper-bundle.min.js"></script>
+
+  <!-- JS -->
+  <script src="../js/script.js"></script>
 </html>

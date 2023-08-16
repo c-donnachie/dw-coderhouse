@@ -1,148 +1,98 @@
-.banner-container {
-  overflow: hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; }
 
-.banner-container::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #090819);
-  z-index: 1;
-}
+a {
+  text-decoration: none; }
 
-.container-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-/* elementos */
+h1,
+h2,
+h3,
+h5,
+p {
+  color: white; }
 
-.card,
-card-2 {
-  display: inline-block;
-  margin-right: 20px;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  border-radius: 0.8rem;
-  border-color: transparent;
-}
+section {
+  height: 100vh;
+  display: flex; }
 
-.card img {
-  max-width: 100%;
-  height: auto;
-}
-
-.card::before {
-  inset: 0px;
-  content: "";
-  position: absolute;
-  z-index: 1;
-}
-
-.card:hover,
-.card img:hover {
-  border-color: rgb(200, 15, 233);
-}
-
-.card-2 img {
-  width: auto;
-  height: 602px;
-  object-fit: fill;
-}
-
-.card-2::before {
-  inset: 0px;
-  content: "";
-  position: absolute;
-  z-index: 1;
-}
-
-.card-2:hover,
-.card-2 img:hover {
-  border-color: rgb(200, 15, 233);
-}
-
-.container-img {
-  gap: 32px;
-  margin-left: 32px;
-  margin-right: 32px;
-}
-
-.section-1 {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-/* section promo grid 2 espacios */
-
-.section-grid {
-  display: grid;
-  grid-template-areas: "izquierda derecha";
-  padding: 50px;
-}
-
-.section-grid img {
-  width: 780px;
-  height: auto;
-}
-.s1 {
-  grid-area: izquierda;
-}
-
-.s2 {
-  grid-area: derecha;
-}
-
-.button-2 {
+.button {
+  background-image: linear-gradient(to right, #9181f8, #bd13e8);
+  padding: 0.5rem 4rem;
+  border-radius: 10px;
+  border: 2px solid #9181f8;
   text-align: center;
   color: white;
   font-size: larger;
-  background-image: linear-gradient(to right, rgb(145, 129, 248), #bd13e8);
-  padding: 15px;
-  width: 230px;
-  border-radius: 6px;
-  transition: background-image 0.3s ease;
-  border: 1px solid transparent;
+  font-weight: bold; }
+
+.button:hover {
+  border-color: #bd13e8;
+  background-image: linear-gradient(to right, transparent, transparent); }
+
+footer {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 150px; }
+
+.slide-container {
+  max-width: auto;
+  width: 100%;
+  padding: 40px 0;
 }
 
-.button-2:hover {
-  border-color: rgb(145, 129, 248);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
+.slide-content {
+  padding: 2rem 1rem; }
 
-.banner-2 {
-  width: auto;
+.card-image {
   height: auto;
-  margin-left: 100px;
-}
+  width: auto; }
 
-.section-flex-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+.card-image .card-img {
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  border: 3px solid transparent;
+  transform: scale(1);
+  transition: border-color 0.3s ease, transform 0.3s ease, opacity 0.1s ease-out;
+  opacity: 0.8; }
 
+.card-image:hover .card-img:hover {
+  border-color: #bd13e8;
+  transform: scale(1.05);
+  opacity: 1;
+  background-image: linear-gradient(to bottom right, #bd13e8, #9181f8); }
 
-/* MODO GRID BOOTSTRAP >.<  */
+.swiper-navBtn {
+  color: #9181f8;
+  transition: color 0.3s ease; }
 
-sub-container {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+.swiper-navBtn:hover {
+  color: #bd13e8; }
 
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 40px; }
 
-.section-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+.swiper-button-next {
+  right: 0; }
+
+.swiper-button-prev {
+  left: 0; }
+
+.swiper-pagination-bullet {
+  background-color: #9181f8;
+  opacity: 1; }
+
+.swiper-pagination-bullet-active {
+  background-color: #bd13e8; }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px; }
+  .swiper-navBtn {
+    display: none; } }
