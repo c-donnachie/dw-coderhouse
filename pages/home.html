@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Categorias de peliculas y series">
-    <meta name="keywords" content="series, peliculas, anime, terror, accion">
+    <meta name="description" content="Categorias de peliculas y series" />
+    <meta name="keywords" content="series, peliculas, anime, terror, accion" />
     <title>Películas de HBO</title>
 
     <!-- CSS -->
@@ -34,18 +34,41 @@
   </head>
 
   <header class="header">
-    <div class="header-buttons">
-      <a href="./home.html"><div>Inicio</div></a>
-      <a href="./films.html"><div>Peliculas</div></a>
-      <a href="./series.html"><div>Series</div></a>
+    <div class="menu">
+
+      <div class="menu-toggle">
+        <div class="logo-movile">
+          <img src="../img/hbomax.png" alt="Logo" />
+        </div>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="menu-icon">
+          <img src="../img/menu/menu.png" alt="" />
+        </label>
+      </div>
+
+      <div class="header-buttons">
+        <a href="./home.html"><div>Inicio</div></a>
+        <a href="./films.html"><div>Peliculas</div></a>
+        <a href="./series.html"><div>Series</div></a>
+      </div>
+      <div class="header-logo">
+        <img src="../img/hbomax.png" alt="Logo" />
+      </div>
+      <div class="header-buttons">
+        <a href="./sign_in.html">Iniciar Sesion</a>
+        <a href="./subscribe.html"><div class="header-button-1">Suscribirse</div></a>
+      </div>
     </div>
-    <div class="header-logo">
-      <img src="../img/hbomax.png" alt="Logo" />
-    </div>
-    <div class="header-buttons">
-      <a href="./sign_in.html">Iniciar Sesion</a>
-      <a href="./subscribe.html"><div class="header-button-1">Suscribirse</div></a>
-    </div>
+
+    <nav class="mobile-nav" id="mobile-nav">
+      <ul>
+        <li><a href="./home.html">Inicio</a></li>
+        <li><a href="./films.html">Peliculas</a></li>
+        <li><a href="./series.html">Series</a></li>
+        <li><a href="./sign_in.html">Iniciar Sesion</a></li>
+        <li><a href="./subscribe.html" class="header-button-1">Suscribirse</a></li>
+      </ul>
+    </nav>
   </header>
 
   <body>
@@ -76,23 +99,23 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active banner-container">
-            <img src="../img/banners/1.jpeg" class="d-block w-100" alt="..." />
+            <img src="../img/banners/1.jpeg" class="d-block w-100 banner-2" alt="..." />
             <div class="carousel-caption d-none d-md-block description">
-              <img src="../img/banners/2.png" class="logos" alt="b-2">
+              <img src="../img/banners/2.png" class="logos" alt="b-2" />
               <p>La historia que amas y nuevas por descrubir.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="../img/banners/3.jpeg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block description">
-              <img src="../img/banners/4.png" class="logos" alt="b-2">
+              <img src="../img/banners/4.png" class="logos" alt="b-2" />
               <p>Emocionantes estrenos.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="../img/banners/5.jpeg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block description">
-              <img src="../img/banners/6.png" class="logos" alt="b-2">
+              <img src="../img/banners/6.png" class="logos" alt="b-2" />
               <p>Para los amantes del terror.</p>
             </div>
           </div>
