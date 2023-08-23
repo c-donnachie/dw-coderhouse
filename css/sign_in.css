@@ -39,21 +39,20 @@ footer {
   height: 150px; }
 
 .page {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 60px; }
+  margin-top: 100px; }
 
-.container-1 {
-  height: 400px;
-  width: 900px;
-  padding: 45px;
-  padding-bottom: 130px;
-  margin-bottom: 117px;
+.container-sign {
+  height: auto;
+  width: auto;
+  padding: 2rem 4rem;
   background-color: rgba(65, 65, 65, 0.179);
   backdrop-filter: blur(10px);
-  border-radius: 10px;
+  border-radius: 0.5rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -86,7 +85,7 @@ button {
   line-height: normal;
   text-align: center;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0.2rem;
   color: white;
   font-size: medium;
   border: 2px solid transparent;
@@ -97,15 +96,16 @@ button:hover {
   border-color: #9181f8; }
 
 .button-2 {
-  height: 50px;
+  height: auto;
   width: 260px;
   padding: 15px;
   text-align: center;
   background-color: rgba(150, 150, 150, 0.111);
-  border-radius: 4px;
+  border-radius: 0.2rem;
   cursor: pointer;
   color: white;
   font-size: medium;
+  align-self: self-start;
   border: 2px solid transparent;
   transition: background-image 0.3s ease; }
 
@@ -130,6 +130,7 @@ p {
 .custom-hr {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.859);
   padding: 20px; }
 
@@ -142,13 +143,11 @@ p {
 .custom-hr span {
   padding: 0 10px; }
 
+.form {
+  margin: 10rem 10rem; }
+
 /* medias q */
 @media screen and (max-width: 768px) {
-  .container-1 {
-    height: 400px;
-    width: auto;
-    margin: 0 10px;
-    padding: 0px 10px;
-    padding-bottom: 160px; }
-  .page {
-    margin-top: -40px; } }
+  .button-2 {
+    height: auto;
+    align-self: center; } }
