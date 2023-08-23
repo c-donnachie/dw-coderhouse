@@ -67,7 +67,7 @@
   display: none;
 }
 .mobile-nav {
-  background-color: $background-header-color;
+  background-color: $bg-header-color-movile;
   text-align: center;
   width: 100%;
   position: absolute;
@@ -78,10 +78,6 @@
 
 #menu-checkbox {
   display: none;
-}
-
-.banner-2 {
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.27));
 }
 
 .section-flex-1 {
@@ -97,15 +93,10 @@
 @media (max-width: 768px) {
   .header {
     flex-direction: flex;
+    background-color: $bg-header-color-movile;
     .header-buttons {
       display: none;
     }
-  }
-
-  .container-fluid {
-    max-width: 100%;
-    height: auto;
-    padding-top: 100px;
   }
 
   .menu {
@@ -126,6 +117,11 @@
 
   .menu-icon {
     cursor: pointer;
+  }
+
+  .menu-icon img {
+    height: auto;
+    width: 30px;
   }
 
   #menu-checkbox:checked ~ .mobile-nav {

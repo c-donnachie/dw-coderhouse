@@ -35,14 +35,13 @@
 
   <header class="header">
     <div class="menu">
-
       <div class="menu-toggle">
         <div class="logo-movile">
           <img src="../img/hbomax.png" alt="Logo" />
         </div>
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="menu-icon">
-          <img src="../img/menu/menu.png" alt="" />
+          <img src="../img/menu/menu-movil.png" alt="movil" />
         </label>
       </div>
 
@@ -99,20 +98,20 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active banner-container">
-            <img src="../img/banners/1.jpeg" class="d-block w-100 banner-2" alt="..." />
+            <img src="../img/banners/1.jpeg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block description">
               <img src="../img/banners/2.png" class="logos" alt="b-2" />
               <p>La historia que amas y nuevas por descrubir.</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item banner-container">
             <img src="../img/banners/3.jpeg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block description">
               <img src="../img/banners/4.png" class="logos" alt="b-2" />
               <p>Emocionantes estrenos.</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item banner-container">
             <img src="../img/banners/5.jpeg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block description">
               <img src="../img/banners/6.png" class="logos" alt="b-2" />
@@ -141,6 +140,7 @@
       </div>
     </section>
 
+    <h4 class="texto-carrusel">Series y peliculas</h4>
     <!-- Content -->
     <div class="slide-container swiper">
       <div class="slide-content">
@@ -215,6 +215,26 @@
       <div class="swiper-button-prev swiper-navBtn"></div>
       <div class="swiper-pagination"></div>
     </div>
+
+    <!--Cards BTS-->
+    <div class="container mt-3">
+      <div class="row g-3">
+        <!--tarjeta 1-->
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <img class="card-img-top" src="../img/banners-2/1.jpeg" alt="fito-tercer-mundo" />
+        </div>
+        <!--tarjeta 2-->
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="card-body section-flex">
+            <h3>Dale play a la diversion</h3>
+            <p>se parte de los universos de Warners Bros, DC Comics, HBO, Cartoon Network y mas.</p>
+            <div class="button">Suscribete Ahora!</div>
+          </div>
+        </div>
+        <!-- === -->
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer>
       <p>Derechos de autor © 2023 HBO MAX</p>
@@ -230,4 +250,8 @@
 
   <!-- JS -->
   <script src="../js/script.js"></script>
+
+  <!-- Menu JS -->
+  <script src="../js/menu.js"></script>
+  
 </html>

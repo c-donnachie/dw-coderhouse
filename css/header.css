@@ -60,7 +60,7 @@
   display: none; }
 
 .mobile-nav {
-  background-color: rgba(0, 0, 0, 0.375);
+  background-color: rgba(0, 0, 0, 0.806);
   text-align: center;
   width: 100%;
   position: absolute;
@@ -70,9 +70,6 @@
 
 #menu-checkbox {
   display: none; }
-
-.banner-2 {
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.27)); }
 
 .section-flex-1 {
   display: flex;
@@ -85,13 +82,10 @@
 /* Media Query para versiones móviles */
 @media (max-width: 768px) {
   .header {
-    flex-direction: flex; }
+    flex-direction: flex;
+    background-color: rgba(0, 0, 0, 0.806); }
     .header .header-buttons {
       display: none; }
-  .container-fluid {
-    max-width: 100%;
-    height: auto;
-    padding-top: 100px; }
   .menu {
     display: flex; }
   .menu-toggle {
@@ -104,6 +98,9 @@
     margin: 100px; }
   .menu-icon {
     cursor: pointer; }
+  .menu-icon img {
+    height: auto;
+    width: 30px; }
   #menu-checkbox:checked ~ .mobile-nav {
     display: block;
     /* Show the mobile menu when the checkbox is checked */ }
