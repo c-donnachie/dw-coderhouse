@@ -1,156 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <title>Peliculas</title>
+    <meta name="description" content="Categorias de peliculas" />
+    <meta name="keywords" content="peliculas terror, accion" />
+    <title>Solo Peliculas</title>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    ></script>
-    <script type="text/javascript" src="../js/carrusel.js"></script>
-
-    <script src="../bootstrap/js/jquery.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!-- === -->
   </head>
 
   <header class="header">
-    <div class="header-buttons">
-      <a href="./home.html"><div>Inicio</div></a>
-      <a href="./films.html"><div>Peliculas</div></a>
-      <a href="./series.html"><div>Series</div></a>
+    <div class="menu">
+      <div class="menu-toggle">
+        <div class="logo-movile">
+          <img src="../assets/img/hbomax.png" alt="Logo" />
+        </div>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="menu-icon">
+          <img src="../assets/img/menu/menu-movil.png" alt="movil" />
+        </label>
+      </div>
+
+      <div class="header-buttons">
+        <a href="./home.html"><div>Inicio</div></a>
+        <a href="./films.html"><div>Peliculas</div></a>
+        <a href="./series.html"><div>Series</div></a>
+      </div>
+      <div class="header-logo">
+        <img src="../assets/img/hbomax.png" alt="Logo" />
+      </div>
+      <div class="header-buttons">
+        <a href="./sign_in.html">Iniciar Sesion</a>
+        <a href="./subscribe.html"><div class="header-button-1">Suscribirse</div></a>
+      </div>
     </div>
-    <div class="header-logo">
-      <img src="../img/hbomax.png" alt="Logo" />
-    </div>
-    <div class="header-buttons">
-      <a href="./sign_in.html">Iniciar Sesion</a>
-      <a href="./subscribe.html"><div class="header-button-1">Suscribirse</div></a>
-    </div>
+
+    <nav class="mobile-nav" id="mobile-nav">
+      <ul>
+        <li><a href="./home.html">Inicio</a></li>
+        <li><a href="./films.html">Peliculas</a></li>
+        <li><a href="./series.html">Series</a></li>
+        <li><a href="./sign_in.html">Iniciar Sesion</a></li>
+        <li><a href="./subscribe.html" class="header-button-1">Suscribirse</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <body>
-    <section class="divition-body">
-      <h3 class="titles">Peliculas imperdibles</h3>
-      <div class="container-img">
-        <div class="card">
-          <img src="../img/portadas/pelis-imperdibles/0.jpeg" alt="Imagen 0" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-imperdibles/1.jpeg" alt="Imagen 1" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-imperdibles/2.jpeg" alt="Imagen 2" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-imperdibles/3.jpeg" alt="Imagen 3" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-imperdibles/4.jpeg" alt="Imagen 4" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-imperdibles/5.jpeg" alt="Imagen 5" />
-        </div>
-      </div>
-    </section>
-
-    <section class="divition-slide">
-      <h3 class="titles">De domingo</h3>
-      <div class="container-img">
-        <div class="card">
-          <img src="../img/portadas/pelis-domingo/0.jpeg" alt="Imagen 2-0" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-domingo/1.jpeg" alt="Imagen 2-1" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-domingo/2.jpeg" alt="Imagen 2-2" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-domingo/3.jpeg" alt="Imagen 2-3" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-domingo/4.jpeg" alt="Imagen 2-4" />
-        </div>
-      </div>
-    </section>
-
-    <section class="divition-slide">
-      <h3 class="titles">Tus heroes favoritos</h3>
-      <div class="container-img">
-        <div class="card">
-          <img src="../img/portadas/pelis-superheroes/0.jpeg" alt="Imagen 3-0" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-superheroes/1.jpeg" alt="Imagen 3-1" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-superheroes/2.jpeg" alt="Imagen 3-2" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-superheroes/3.jpeg" alt="Imagen 3-3" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-superheroes/4.jpeg" alt="Imagen 3-4" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-superheroes/5.jpeg" alt="Imagen 3-5" />
-        </div>
-      </div>
-    </section>
-
-    <section class="divition-slide">
-      <h3 class="titles">Terror y suspenso</h3>
-      <div class="container-img">
-        <div class="card">
-          <img src="../img/portadas/pelis-terror/0.jpeg" alt="Imagen 4-0" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-terror/1.jpeg" alt="Imagen 4-1" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-terror/2.jpeg" alt="Imagen 4-2" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-terror/3.jpeg" alt="Imagen 4-3" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-terror/4.jpeg" alt="Imagen 4-4" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-terror/5.jpeg" alt="Imagen 4-5" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-terror/6.jpeg" alt="Imagen 4-6" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-terror/7.jpeg" alt="Imagen 4-6" />
-        </div>
-        <div class="card">
-          <img src="../img/portadas/pelis-terror/8.jpeg" alt="Imagen 4-8" />
-        </div>
-      </div>
-    </section>
+  <body class="bg-image">
+    <!-- Content -->
+    <h4 class="texto-carrusel space">Para morirse de la risa</h4>
     <!-- === -->
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-comedia/0.jpeg" alt="0" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-comedia/1.jpeg" alt="1" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-comedia/2.jpeg" alt="2" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-comedia/3.jpeg" alt="3" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-comedia/4.jpeg" alt="4" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Fin -->
+
+    <!-- Content -->
+    <h4 class="texto-carrusel">Imperdibles del cine</h4>
+    <!-- === -->
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-imperdibles/0.jpeg" alt="0" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-imperdibles/1.jpeg" alt="1" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-imperdibles/2.jpeg" alt="2" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-imperdibles/3.jpeg" alt="3" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-imperdibles/4.jpeg" alt="4" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-imperdibles/5.jpeg" alt="5" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Fin -->
+
+    <!-- Content -->
+    <h4 class="texto-carrusel">Como dia domingo</h4>
+    <!-- === -->
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-domingo/0.jpeg" alt="0" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-domingo/1.jpeg" alt="1" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-domingo/2.jpeg" alt="2" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-domingo/3.jpeg" alt="3" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+
+          <!-- === -->
+          <div class="image-content swiper-slide">
+            <div class="card-image">
+              <img src="../assets/img/portadas/pelis-domingo/4.jpeg" alt="4" class="card-img" />
+            </div>
+          </div>
+          <!-- === -->
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Fin -->
+
+    <!-- Footer -->
+    <footer>
+      <p>Derechos de autor © 2023 HBO MAX</p>
+    </footer>
   </body>
 
-  <footer>
-    <p>Derechos de autor © 2023 HBO MAX</p>
-  </footer>
+  <!-- Bootstrap JS -->
+  <script src="../bootstrap/js/jquery.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="../js/swiper-bundle.min.js"></script>
+
+  <!-- JS -->
+  <script src="../js/script.js"></script>
+
+  <!-- Menu JS -->
+  <script src="../js/menu.js"></script>
 </html>

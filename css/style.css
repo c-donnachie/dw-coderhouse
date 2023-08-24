@@ -69,6 +69,14 @@
   .swiper-navBtn {
     display: none; } }
 
+.container-page {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.space {
+  margin-top: 8rem; }
+
 * {
   font-family: "Poppins", sans-serif;
   font-size: 16px; }
@@ -102,7 +110,7 @@ section {
   background-image: linear-gradient(to right, transparent, transparent); }
 
 .bg-image {
-  background-image: url("../img/bg/1.png");
+  background-image: url("../assets/img/bg/1.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -113,7 +121,7 @@ section {
   -ms-user-select: none; }
 
 .bg-image-2 {
-  background-image: url("../img/bg/2.png");
+  background-image: url("../assets/img/bg/2.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -408,18 +416,16 @@ p {
     height: auto;
     align-self: center; } }
 
-.container-page {
+.container-suscribe {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 60px; }
+  align-items: center; }
 
-.section-1 {
+.sub-container {
   display: flex;
   flex-direction: column;
-  padding-left: 220px;
-  margin-top: 500px; }
+  margin-top: 500px;
+  padding: 0 2rem; }
 
 .button-1 {
   text-align: center;
