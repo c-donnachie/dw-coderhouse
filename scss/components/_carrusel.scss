@@ -24,10 +24,9 @@
 }
 
 .card-image:hover .card-img:hover {
-  border-color: $primary-color;
+  background-image: linear-gradient(to right, $secondary-color, $primary-color);
   transform: scale(1.05);
   opacity: 1;
-  background-image: linear-gradient(to bottom right, $primary-color, $secondary-color);
 }
 
 .slide {

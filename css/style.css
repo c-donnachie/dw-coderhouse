@@ -1,5 +1,18 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@keyframes gradientChange {
+  0% {
+    background-position: -200% 50%; }
+  100% {
+    background-position: 300% 50%; } }
+
+@keyframes lightFlash {
+  0%,
+  100% {
+    opacity: 0.8; }
+  50% {
+    opacity: 1; } }
+
 .slide-container {
   max-width: auto;
   width: 100%;
@@ -23,10 +36,9 @@
   opacity: 0.8; }
 
 .card-image:hover .card-img:hover {
-  border-color: #bd13e8;
+  background-image: linear-gradient(to right, #9181f8, #bd13e8);
   transform: scale(1.05);
-  opacity: 1;
-  background-image: linear-gradient(to bottom right, #bd13e8, #9181f8); }
+  opacity: 1; }
 
 .slide {
   margin: -200 !important; }
@@ -82,6 +94,7 @@
   font-size: 16px; }
 
 a {
+  color: inherit;
   text-decoration: none; }
 
 h1,
@@ -103,10 +116,13 @@ section {
   text-align: center;
   color: white;
   font-size: larger;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: border-color 0.3s ease-out;
+  animation: gradientChange 9s ease-in-out infinite alternate, lightFlash 2s infinite; }
 
 .button:hover {
   border-color: #bd13e8;
+  animation: none;
   background-image: linear-gradient(to right, transparent, transparent); }
 
 .bg-image {
@@ -222,20 +238,25 @@ section {
     display: flex; }
   .menu-toggle {
     display: flex;
-    padding: 10px 10px;
+    padding: 0 20px;
     align-items: center;
-    width: 100%;
-    margin-right: 40px; }
+    justify-content: space-between;
+    width: 100%; }
   .logo-movile {
-    margin: 100px; }
+    text-align: center;
+    display: flex; }
+  .logo {
+    height: 20px;
+    width: auto; }
   .menu-icon {
     cursor: pointer; }
   .menu-icon img {
-    height: auto;
-    width: 30px; }
+    height: 30px;
+    width: auto; }
+  .header-logo {
+    display: none; }
   #menu-checkbox:checked ~ .mobile-nav {
-    display: block;
-    /* Show the mobile menu when the checkbox is checked */ }
+    display: block; }
   .mobile-nav ul {
     list-style: none;
     padding: 10px 0; }
@@ -428,15 +449,16 @@ p {
   padding: 0 2rem; }
 
 .button-1 {
+  background-image: linear-gradient(to right, #9181f8, #bd13e8);
+  padding: 0.5rem 4rem;
+  border-radius: 10px;
+  border: 2px solid #9181f8;
   text-align: center;
   color: white;
   font-size: larger;
-  background-image: linear-gradient(to right, #9181f8, #bd13e8);
-  padding: 15px;
-  width: 180px;
-  border-radius: 6px;
-  transition: background-image 0.3s ease;
-  border: 1px solid transparent;
+  font-weight: bold;
+  transition: border-color 0.3s ease-out;
+  animation: gradientChange 9s ease-in-out infinite alternate, lightFlash 2s infinite;
   margin-top: 40px;
   margin-bottom: 40px; }
 

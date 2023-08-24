@@ -10,15 +10,7 @@
 }
 
 .button-1 {
-  text-align: center;
-  color: white;
-  font-size: larger;
-  background-image: linear-gradient(to right, rgb(145, 129, 248), #bd13e8);
-  padding: 15px;
-  width: 180px;
-  border-radius: 6px;
-  transition: background-image 0.3s ease;
-  border: 1px solid transparent;
+  @include animated-button($primary-color, $secondary-color);
   margin-top: 40px;
   margin-bottom: 40px;
 }
