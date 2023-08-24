@@ -1,0 +1,7 @@
+.bg-image {
+  @include backgound-image("../img/bg/1.png");
+}
+
+.bg-image-2 {
+  @include backgound-image("../img/bg/2.png");
+}

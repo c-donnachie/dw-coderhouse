@@ -1,0 +1,17 @@
+@mixin flex($justify,$align){
+  display:flex;
+  justify-content:$justify;
+  align-items:$align;
+}
+
+@mixin backgound-image($image-path) {
+  background-image: url($image-path);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

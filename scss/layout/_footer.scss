@@ -1,0 +1,5 @@
+footer {
+  @include flex(center, end);
+  padding: 10px 0;
+  height: 150px;
+}
