@@ -1,18 +1,26 @@
-.container-suscribe {
+.body-suscribe {
+  width: 100%;
   @include flex(center, center);
+  flex-direction: column;
+  margin-top: 40rem;
 }
 
-.sub-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 500px;
+li {
+  color: white;
+  font-size: medium;;
+}
+
+.suscribe-section {
   padding: 0 2rem;
+  padding-bottom: -200rem;
 }
 
 .button-1 {
   @include animated-button($primary-color, $secondary-color);
-  margin-top: 40px;
-  margin-bottom: 40px;
+  @include flex(center, center);
+  padding: 1rem;
+  font-size: medium;
+  margin-bottom: 1rem;
 }
 
 .button-1:hover {

@@ -100,6 +100,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 h5,
 p {
   color: white; }
@@ -437,16 +438,21 @@ p {
     height: auto;
     align-self: center; } }
 
-.container-suscribe {
+.body-suscribe {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
-
-.sub-container {
-  display: flex;
+  align-items: center;
   flex-direction: column;
-  margin-top: 500px;
-  padding: 0 2rem; }
+  margin-top: 40rem; }
+
+li {
+  color: white;
+  font-size: medium; }
+
+.suscribe-section {
+  padding: 0 2rem;
+  padding-bottom: -200rem; }
 
 .button-1 {
   background-image: linear-gradient(to right, #9181f8, #bd13e8);
@@ -459,8 +465,12 @@ p {
   font-weight: bold;
   transition: border-color 0.3s ease-out;
   animation: gradientChange 9s ease-in-out infinite alternate, lightFlash 2s infinite;
-  margin-top: 40px;
-  margin-bottom: 40px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: medium;
+  margin-bottom: 1rem; }
 
 .button-1:hover {
   border-color: #9181f8;
