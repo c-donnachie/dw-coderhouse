@@ -1,4 +1,4 @@
-# PROJECTO FINAL - Coderhouse
+# PROYECTO FINAL - Coderhouse
 Projecto realizado para el curos de desarrollo web en la plataforma de Coderhouse
 
 # Descripcion
